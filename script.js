@@ -1,6 +1,13 @@
-var data=[];
+var title=[];
 document.querySelectorAll("#items #video-title").forEach(function (element) {
   var textContent = element.textContent.replace(/\r?\n|\r/g, '').trim();
-  data.push(textContent);
+  title.push(textContent);
 });
-console.log(data)
+console.log(title);
+
+var urls=[];
+document.querySelectorAll("#items #wc-endpoint").forEach(function (element) {
+  var textContent = element.href;
+  urls.push(textContent);
+});
+console.log(urls);
